@@ -36,8 +36,8 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-lin
 #git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 # iStore
-#git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
-#git_sparse_clone main https://github.com/linkease/istore luci
+git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
+git_sparse_clone main https://github.com/linkease/istore luci
 
 # 加入OpenClash核心
 chmod -R a+x $GITHUB_WORKSPACE/preset-clash-core.sh
