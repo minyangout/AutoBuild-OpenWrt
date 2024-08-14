@@ -40,8 +40,8 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-lin
 #git_sparse_clone main https://github.com/linkease/istore luci
 
 # 加入OpenClash核心
-chmod -R a+x $GITHUB_WORKSPACE/preset-clash-core.sh
-$GITHUB_WORKSPACE/preset-clash-core.sh
+#chmod -R a+x $GITHUB_WORKSPACE/preset-clash-core.sh
+#$GITHUB_WORKSPACE/preset-clash-core.sh
 
 # 动态DNS
 sed -i '/boot()/,+2d' feeds/packages/net/ddns-scripts/files/etc/init.d/ddns
