@@ -94,6 +94,10 @@ sed -i "s|firmware_repo.*|firmware_repo 'https://github.com/haiibo/OpenWrt'|g" p
 # sed -i "s|kernel_path.*|kernel_path 'https://github.com/ophub/kernel'|g" package/luci-app-amlogic/root/etc/config/amlogic
 sed -i "s|ARMv8|ARMv8_PLUS|g" package/luci-app-amlogic/root/etc/config/amlogic
 
+# 更换 Nodejs 版本
+rm -rf ./feeds/packages/lang/node
+git clone https://github.com/sbwml/feeds_packages_lang_node-prebuilt feeds/packages/lang/node
+
 # SmartDNS
 #git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
 #git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
