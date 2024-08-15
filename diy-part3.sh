@@ -54,6 +54,9 @@ ln -sf ../../../feeds/packages/net/ddns-scripts_aliyun ./package/feeds/packages/
 
 # Dnsfilter
 git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter.git package/new/luci-app-dnsfilter
+# Dnsproxy
+cp -rf ../OpenWrt-Add/luci-app-dnsproxy ./package/new/luci-app-dnsproxy
+
 
 # socat
 cp -rf ../Lienol_pkg/luci-app-socat ./package/new/luci-app-socat
