@@ -52,11 +52,11 @@ ln -sf ../../../feeds/packages/net/ddns-scripts_aliyun ./package/feeds/packages/
 git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter.git package/new/luci-app-dnsfilter
 
 # socat
-#cp -rf ../Lienol_pkg/luci-app-socat ./package/new/luci-app-socat
-#pushd package/new
-#wget -qO - https://github.com/Lienol/openwrt-package/pull/39.patch | patch -p1
-#popd
-#sed -i '/socat\.config/d' feeds/packages/net/socat/Makefile
+cp -rf ../Lienol_pkg/luci-app-socat ./package/new/luci-app-socat
+pushd package/new
+wget -qO - https://github.com/Lienol/openwrt-package/pull/39.patch | patch -p1
+popd
+sed -i '/socat\.config/d' feeds/packages/net/socat/Makefile
 
 # 晶晨宝盒
 #git_sparse_clone main https://github.com/ophub/luci-app-amlogic luci-app-amlogic
