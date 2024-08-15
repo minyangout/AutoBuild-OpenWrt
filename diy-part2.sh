@@ -57,6 +57,10 @@ git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial l
 # 更改 Argon 主题背景
 cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
+# 更换 Nodejs 版本
+rm -rf ./feeds/packages/lang/node
+git clone https://github.com/sbwml/feeds_packages_lang_node-prebuilt feeds/packages/lang/node
+
 
 # MAC 地址与 IP 绑定
 cp -rf ../immortalwrt_luci/applications/luci-app-arpbind ./feeds/luci/applications/luci-app-arpbind
