@@ -58,8 +58,8 @@ git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial l
 cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
 # 更换 Nodejs 版本
-#rm -rf ./feeds/packages/lang/node
-#git clone https://github.com/sbwml/feeds_packages_lang_node-prebuilt feeds/packages/lang/node
+rm -rf ./feeds/packages/lang/node
+git clone https://github.com/sbwml/feeds_packages_lang_node-prebuilt feeds/packages/lang/node
 
 echo -e "预置Clash内核"
 mkdir -p package/luci-app-openclash/root/etc/openclash/core
